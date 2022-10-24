@@ -1,0 +1,21 @@
+﻿<Window x:Class="SQL_Connection.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SQL_Connection"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="600">
+    <Grid Background="LightBlue">
+        <Button Content="Connect" HorizontalAlignment="Left" Margin="144,152,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click" FontWeight="Bold"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="76,74,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="78,113,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <PasswordBox Name="Pass" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="144,113,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
+        <TextBox Name="User" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="144,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Height="26"/>
+        <TextBox Name="commandText" HorizontalAlignment="Left" Margin="296,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Height="100" AcceptsReturn="True" AcceptsTab="True"/>
+        <Button Content="Execute" HorizontalAlignment="Left" Margin="296,152,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="Button_Click_1"/>
+        <Label Content="Command:" HorizontalAlignment="Left" Margin="296,8,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Name="connectionStatus" Content="Connection" HorizontalAlignment="Left" Margin="144,177,0,0" VerticalAlignment="Top" Width="125" Height="28"/>
+
+    </Grid>
+</Window>
