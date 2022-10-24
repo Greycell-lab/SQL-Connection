@@ -15,7 +15,7 @@
         <TextBox Name="commandText" HorizontalAlignment="Left" Margin="296,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Height="100" AcceptsReturn="True" AcceptsTab="True"/>
         <Button Content="Execute" HorizontalAlignment="Left" Margin="296,152,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="Button_Click_1"/>
         <Label Content="Command:" HorizontalAlignment="Left" Margin="296,8,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Name="connectionStatus" Content="Connection" HorizontalAlignment="Left" Margin="144,177,0,0" VerticalAlignment="Top" Width="125" Height="28"/>
+        <Label Name="connectionStatus" Content="Not Connected" HorizontalAlignment="Left" Margin="144,177,0,0" VerticalAlignment="Top" Width="96" Height="28"/>
 
     </Grid>
 </Window>

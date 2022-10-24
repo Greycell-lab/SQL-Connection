@@ -27,6 +27,7 @@ namespace SQL_Connection
         {
             InitializeComponent();
             connectionStatus.Content = "Not Connected";
+            connectionStatus.Background = Brushes.Red;
         }
 
         public void Button_Click(object sender, RoutedEventArgs e)
@@ -44,10 +45,12 @@ namespace SQL_Connection
             {
                 conn.Open();
                 connectionStatus.Content = "Connected";
-                
+                connectionStatus.Background = Brushes.Green;
+
+
                 //reader = newcommand.ExecuteReader();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }
@@ -64,6 +67,7 @@ namespace SQL_Connection
             {
                 reader = newcommand.ExecuteReader();
                 MessageBox.Show("Executed");
+                reader.Close();
             }
             catch(Exception ex)
             {
